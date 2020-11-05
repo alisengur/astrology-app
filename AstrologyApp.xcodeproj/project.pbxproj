@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		229E704525547E680079B4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E704425547E680079B4F4 /* AppDelegate.swift */; };
 		229E704725547E680079B4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E704625547E680079B4F4 /* SceneDelegate.swift */; };
-		229E704925547E680079B4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E704825547E680079B4F4 /* ViewController.swift */; };
 		229E704C25547E680079B4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E704A25547E680079B4F4 /* Main.storyboard */; };
 		229E704E25547E750079B4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229E704D25547E750079B4F4 /* Assets.xcassets */; };
 		229E705125547E750079B4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E704F25547E750079B4F4 /* LaunchScreen.storyboard */; };
+		229E705925547FAD0079B4F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E705825547FAD0079B4F4 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		229E704125547E680079B4F4 /* AstrologyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstrologyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E704425547E680079B4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		229E704625547E680079B4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		229E704825547E680079B4F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		229E704B25547E680079B4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		229E704D25547E750079B4F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229E705025547E750079B4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229E705225547E750079B4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229E705825547FAD0079B4F4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,31 @@
 		229E704325547E680079B4F4 /* AstrologyApp */ = {
 			isa = PBXGroup;
 			children = (
+				229E705B255499270079B4F4 /* Networking */,
+				229E705A255482ED0079B4F4 /* View */,
 				229E704425547E680079B4F4 /* AppDelegate.swift */,
 				229E704625547E680079B4F4 /* SceneDelegate.swift */,
-				229E704825547E680079B4F4 /* ViewController.swift */,
 				229E704A25547E680079B4F4 /* Main.storyboard */,
 				229E704D25547E750079B4F4 /* Assets.xcassets */,
 				229E704F25547E750079B4F4 /* LaunchScreen.storyboard */,
 				229E705225547E750079B4F4 /* Info.plist */,
 			);
 			path = AstrologyApp;
+			sourceTree = "<group>";
+		};
+		229E705A255482ED0079B4F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				229E705825547FAD0079B4F4 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		229E705B255499270079B4F4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				229E704925547E680079B4F4 /* ViewController.swift in Sources */,
+				229E705925547FAD0079B4F4 /* MainViewController.swift in Sources */,
 				229E704525547E680079B4F4 /* AppDelegate.swift in Sources */,
 				229E704725547E680079B4F4 /* SceneDelegate.swift in Sources */,
 			);
