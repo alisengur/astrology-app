@@ -13,6 +13,10 @@
 		229E704E25547E750079B4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229E704D25547E750079B4F4 /* Assets.xcassets */; };
 		229E705125547E750079B4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E704F25547E750079B4F4 /* LaunchScreen.storyboard */; };
 		229E705925547FAD0079B4F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E705825547FAD0079B4F4 /* MainViewController.swift */; };
+		229E705D25549B7F0079B4F4 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E705C25549B7F0079B4F4 /* APIRequest.swift */; };
+		229E70602554AEB80079B4F4 /* AstroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E705F2554AEB80079B4F4 /* AstroDetail.swift */; };
+		229E70632554B8CA0079B4F4 /* AstroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E70622554B8CA0079B4F4 /* AstroViewModel.swift */; };
+		229E70652554C4C10079B4F4 /* AstroDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E70642554C4C10079B4F4 /* AstroDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		229E705025547E750079B4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229E705225547E750079B4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		229E705825547FAD0079B4F4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		229E705C25549B7F0079B4F4 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		229E705F2554AEB80079B4F4 /* AstroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroDetail.swift; sourceTree = "<group>"; };
+		229E70622554B8CA0079B4F4 /* AstroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroViewModel.swift; sourceTree = "<group>"; };
+		229E70642554C4C10079B4F4 /* AstroDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		229E704325547E680079B4F4 /* AstrologyApp */ = {
 			isa = PBXGroup;
 			children = (
+				229E70612554B8680079B4F4 /* ViewModel */,
+				229E705E2554AE440079B4F4 /* Model */,
 				229E705B255499270079B4F4 /* Networking */,
 				229E705A255482ED0079B4F4 /* View */,
 				229E704425547E680079B4F4 /* AppDelegate.swift */,
@@ -72,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				229E705825547FAD0079B4F4 /* MainViewController.swift */,
+				229E70642554C4C10079B4F4 /* AstroDetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -79,8 +90,25 @@
 		229E705B255499270079B4F4 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				229E705C25549B7F0079B4F4 /* APIRequest.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		229E705E2554AE440079B4F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				229E705F2554AEB80079B4F4 /* AstroDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		229E70612554B8680079B4F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				229E70622554B8CA0079B4F4 /* AstroViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229E70652554C4C10079B4F4 /* AstroDetailsViewController.swift in Sources */,
+				229E70632554B8CA0079B4F4 /* AstroViewModel.swift in Sources */,
+				229E70602554AEB80079B4F4 /* AstroDetail.swift in Sources */,
 				229E705925547FAD0079B4F4 /* MainViewController.swift in Sources */,
 				229E704525547E680079B4F4 /* AppDelegate.swift in Sources */,
+				229E705D25549B7F0079B4F4 /* APIRequest.swift in Sources */,
 				229E704725547E680079B4F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
