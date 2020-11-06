@@ -28,8 +28,28 @@ class MainViewController: UIViewController {
     
     
     
+    //MARK: - lyfe cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        clearUI()
+    }
+    
+    
+    private func clearUI() {
+        // clear all text fields
+        self.dayTextField.text = ""
+        self.monthTextField.text = ""
+        self.yearTextField.text = ""
+        self.locationTextField.text = ""
+        self.timezoneTextField.text = ""
+        self.hourTextField.text = ""
+        self.minuteTextField.text = ""
+        dayTextField.becomeFirstResponder()
     }
     
 
@@ -70,14 +90,10 @@ class MainViewController: UIViewController {
                     }
                 }
                 
-                
             }
             
         }
         
-        
     }
-    
-    
     
 }
